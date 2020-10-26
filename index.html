@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GET SET GO!</title>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer">
+    <div class="timer__controls">
+      <button data-time="20" class="timer__button">Breathe-in and out</button>
+      <button data-time="300" class="timer__button">5-Min</button>
+      <button data-time="900" class="timer__button">15-Min</button>
+      <button data-time="1200" class="timer__button">20-Min</button>
+      <button data-time="3600" class="timer__button">Go for an hour</button>
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" placeholder="Set your own time(minutes)">
+      </form>
+    </div>
+    <div class="display">
+      <h1 class="display__time-left"></h1>
+      <p class="display__end-time"></p>
+    </div>
+	<div class="timer__controls">
+		<button class="timer__button" onclick="pause()">Pause</button>
+    <button class="timer__button" onclick="resume()">Resume</button>
+    <button data-time="0" class="timer__button">Clear</button>
+	</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
